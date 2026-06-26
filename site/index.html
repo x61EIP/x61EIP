@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>x61E|P</title>
+</head>
+<body>
+
+<h1 id="todaysdate"></h1>
+  
+<script type="text/javascript">
+  const TodaysDate = document.getElementById("todaysdate");
+  if (TodaysDate)
+  {
+    const _ = () => { 
+      let date = new Date().toLocaleTimeString();
+      let time = date.substring(0,5);
+      let ampm = date.substring(9,12);
+      TodaysDate.textContent = time + '' + ampm; 
+    }
+    setInterval(_,1000);
+  }
+</script>
+
+</body>
+</html>
