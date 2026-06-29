@@ -14,9 +14,7 @@
   {
     const _ = () => { 
       let date = new Date().toLocaleTimeString();
-      let time = date.substring(0,5);
-      let ampm = date.substring(9,12);
-      TodaysDate.textContent = time + '' + ampm; 
+      TodaysDate.textContent = date; 
     }
     setInterval(_,1000);
   }
